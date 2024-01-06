@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 17, 119);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    /* height: 400px; */
+    width: 700px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    padding: 2em 3em;
+    border-radius: 3em;
+}
+
+.search-box {
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    color:  rgb(27, 17, 119);
+    width: 70%;
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+
+.search-box button {
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 5em;
+    height: 5em;
+    color: rgb(27, 17, 119);
+    border-radius: 5em;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover {
+    color: #fff;
+    background: rgb(27, 17, 119);
+}
+
+.weather-box {
+    text-align: center;
+    display: none;
+}
+
+.weather-box img {
+    width: 50%;
+    margin-top: 5em;
+}
+
+.weather-box .temperature {
+    position: relative;
+    color: rgb(27, 17, 119);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 1em;
+}
+
+.weather-box .temperature span {
+    margin-left: 0.5em;
+    font-size: 1.5em;
+}
+
+.weather-box .description {
+    color: rgb(27, 17, 119);
+    font-size: 1.6em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.weather-details .humidity, .weather-details .wind {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100px;
+}
+
+.weather-details .humidity{
+    font-size: 1.2em;
+    gap: 0.5em;
+    padding-left: 1em;
+    justify-content: flex-start;
+}
+
+.weather-details .wind {
+    font-size: 1.2em;
+    gap: 0.5em;
+    padding-right: 1em;
+    justify-content: flex-end;
+}
+
+.not-found {
+    display: none;
+}
+
+.fadeIn {
+    animation: fadeIn 5s;
+    animation-delay: 0.5s;
+}
